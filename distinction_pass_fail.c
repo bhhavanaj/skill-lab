@@ -3,13 +3,13 @@ int main() {
     int marks;
     printf("enter the student's marks :");
     scanf("%d",&marks);
-    if(marks<75){
+    if(marks>75){
         printf("distinction\n");
     }
-    else if(40>marks>75){
+    else if(40<=marks<=75){
         printf("pass\n");
     }
-    else if(marks<40){
+    else {
         printf("fail\n");
     }
     return 0;
