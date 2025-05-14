@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    int row,col;
+    printf("Enter the number of rows and cols");
+    scanf("%d%d",&row,&col);
+    int a[row][col],b[row][col],c[row][col];
+    printf("Enter the elements of matrics A:\n");
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter the elements of matrics B:\n");
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            scanf("%d",&b[i][j]);
+        }
+    }
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            c[i][j]=a[i][j]-b[i][j];
+        }
+    }
+    printf("the difference of matrices :\n");
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            printf("%6d",c[i][j]);
+        }
+        printf("\n");
+    }
+}
