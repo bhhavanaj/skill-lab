@@ -3,15 +3,16 @@
 int main()
 {
     char name[10];
-    printf("enter name");
+    printf("enter your name:");
     scanf("%s",&name);
-    printf("%s\n",name);
+    printf("my name is %s\n",name);
     int length = strlen(name);
     printf("%d\n",length);
-    strcpy(name,"chidu");
+    strcpy(name,"bhavana");
     printf("%s\n",name);
-    int cmp=strcmp("bo","boo");
+    int cmp=strcmp("rithu","bhavana");
     printf("%d\n",cmp);
-    strcat(name,"coder");
+    strcat(name," is coder");
     printf("%s\n",name);
 }
+
